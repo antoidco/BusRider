@@ -23,14 +23,14 @@ namespace Com.Antoid.Bus {
         }
 
         private void Start() {
-            CameraWork _cameraWork = this.gameObject.GetComponent<CameraWork>();
+            var _cameraFollow = this.gameObject.GetComponent<CameraFollow>();
 
-            if (_cameraWork != null) {
+            if (_cameraFollow != null) {
                 if (photonView.IsMine) {
-                    _cameraWork.OnStartFollowing();
+                    _cameraFollow.OnStartFollowing();
                 }
             } else {
-                Debug.LogError("<Color=Red><a>Missing</a></Color> CameraWork Component on playerPrefab.", this);
+                Debug.LogError("<Color=Red><a>Missing</a></Color> CameraFollow Component on playerPrefab.", this);
             }
         }
 

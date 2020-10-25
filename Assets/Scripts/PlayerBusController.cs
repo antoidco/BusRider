@@ -18,14 +18,14 @@ namespace Com.Antoid.Bus {
         
         // Update is called once per frame
         private void Update() {
-            if (photonView.IsMine == false && PhotonNetwork.IsConnected == true) {
+            if (photonView.IsMine && PhotonNetwork.IsConnected) {
                 _horzInput = Input.GetAxis("Horizontal");
                 _vertInput = Input.GetAxis("Vertical");
             }
         }
         
         private void FixedUpdate() {
-            if (photonView.IsMine == false && PhotonNetwork.IsConnected == true) {
+            if (photonView.IsMine && PhotonNetwork.IsConnected) {
                 var force = new Vector3(0, 0, _vertInput * vertPower);
                 var tourqe = new Vector3(0, _horzInput * horzPower, 0);
                 if (_body.velocity.magnitude < maxSpeed) {
