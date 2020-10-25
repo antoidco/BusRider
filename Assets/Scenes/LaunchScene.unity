@@ -470,6 +470,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1031089239}
     m_Modifications:
+    - target: {fileID: 1376607284075651099, guid: e388030875b03e445a2b74ce522b4b3e,
+        type: 3}
+      propertyPath: viewIdField
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2675659078287934919, guid: e388030875b03e445a2b74ce522b4b3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -529,6 +534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SchoolBus
+      objectReference: {fileID: 0}
+    - target: {fileID: 3244137755472039184, guid: e388030875b03e445a2b74ce522b4b3e,
+        type: 3}
+      propertyPath: viewIdField
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e388030875b03e445a2b74ce522b4b3e, type: 3}

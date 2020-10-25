@@ -652,6 +652,9 @@ GameObject:
   - component: {fileID: 293549780}
   - component: {fileID: 293549781}
   - component: {fileID: 9169384550935756344}
+  - component: {fileID: 1376607284075651099}
+  - component: {fileID: 3978828571506303252}
+  - component: {fileID: 3014292325089449017}
   m_Layer: 0
   m_Name: SchoolBus
   m_TagString: Untagged
@@ -895,6 +898,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horzPower: 21
   vertPower: 30
+  maxSpeed: 5
+  maxAngularSpeed: 1.5
 --- !u!114 &9169384550935756344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,8 +915,58 @@ MonoBehaviour:
   distance: 7
   height: 6
   centerOffset: {x: 0, y: 2, z: 0}
-  followOnStart: 1
+  followOnStart: 0
   smoothSpeed: 0.125
+--- !u!114 &1376607284075651099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2678460422081509599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  observableSearch: 2
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 3978828571506303252}
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &3978828571506303252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2678460422081509599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+--- !u!114 &3014292325089449017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2678460422081509599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8614304b9e351a04ead1c87765667251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2678510776152003651
 GameObject:
   m_ObjectHideFlags: 0
